@@ -5,9 +5,9 @@
 const http = require("http");
 const fs = require("fs");
 
-const HOSTNAME = process.env.HOSTNAME || "localhost";
-process.env.PORT = 3000;
-const PORT = process.env.PORT || 3000;
+const HOSTNAME = process.env.HOSTNAME;
+// process.env.PORT = 3000;
+const PORT = process.env.PORT;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
